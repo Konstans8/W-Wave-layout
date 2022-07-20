@@ -1,0 +1,252 @@
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 540px;
+    }
+
+    /* header */
+
+    .nav {
+        justify-content: flex-end;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .header__top {
+        display: flex;
+    }
+
+    .header__bottom-list {
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+
+    .header__bottom-past-broadcast,
+    .header__bottom-present-broadcast {
+        display: none;
+    }
+
+
+    .burger {
+        display: block;
+    }
+
+    #burger-menu {
+        cursor: pointer;
+        height: 27px;
+        width: 27px;
+        overflow: visible;
+        position: relative;
+        z-index:2;
+      }
+      #burger-menu span,
+      #burger-menu span:before,
+      #burger-menu span:after {
+        background: var(--primary);
+        display: block;
+        height: 4px;
+        opacity: 1;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+      }
+      #burger-menu span:before,
+      #burger-menu span:after {
+        content: "";
+      }
+      #burger-menu span {
+        right: 0px;
+        top: 13px;
+        width: 27px;
+      }
+      #burger-menu span:before {
+        left: 0px;
+        top: -10px;
+        width: 16px;
+      }
+      #burger-menu span:after {
+        left: 0px;
+        top: 10px;
+        width: 20px;
+      }
+      
+      #burger-menu.close span {
+        transform: rotate(-45deg);
+        top: 13px;
+        width: 27px;
+      }
+      #burger-menu.close span:before {
+        top: 0px;
+        transform: rotate(90deg);
+        width: 27px;
+      }
+      #burger-menu.close span:after {
+        top: 0px;
+        left:0;
+        transform: rotate(90deg);
+        opacity:0;
+        width:0;
+      }
+      
+      #menu{
+        z-index:1;
+        min-width:100%;
+        min-height:100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        height:0;
+        visibility: hidden;
+        opacity: 0;
+        text-align:center;
+        padding-top:20px;
+        transition: all 0.3s ease-in-out;
+        
+      }
+      
+      #menu.overlay{
+        visibility: visible;
+        opacity: 1;
+        padding-top:100px;
+        background:rgba(0,0,0,0.9);
+      }
+      
+      #menu li{
+        list-style:none;
+      }
+      #menu a{
+        display:block;
+        margin-bottom:30px;
+        text-decoration:none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: var(--white);
+      }
+
+
+
+    /* hero */
+
+    .hero__img {
+        display: none;
+    }
+
+
+    /* podcasts */
+
+    .podcasts__card {
+        margin-right: 0;
+    }
+
+    .card__hero-left {
+        width: 300px;
+        padding-left: 30px;
+    }
+
+    .card__hero-right {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .card__footer {
+        padding-left: 30px;
+    }
+
+
+
+    /* transmission */
+
+    .transmission__container {
+        flex-direction: column;
+    }
+
+    .transmission__bottom {
+        display: none;
+    }
+
+    .transmission__left {
+        margin-bottom: 50px;
+    }
+
+    .transmission__card {
+        margin-right: 20px;
+    }
+
+
+    /* guests */
+
+    .guests__descr-two {
+        width: 540px;
+    }
+
+    .guest__content {
+        flex-direction: column;
+    }
+
+    .accordion {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+
+    /* playlists */
+
+    .playlists__right {
+        grid-template-columns: 255px 255px;
+        grid-template-rows: 114px 114px 114px 114px 114px 114px;
+    }
+
+    /* buy */
+
+    .buy__container {
+        flex-direction: column;
+    }
+
+    .buy__left {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    /* about */
+
+    .about__top-right {
+        display: none;
+    }
+
+    .about__bottom {
+        grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+    }
+
+    .about__about {
+        width: 240px;
+    }
+
+    .about__form-input {
+        width: 490px;
+        margin-bottom: 30px;
+    }
+
+    .about__form-textarea {
+        max-width: 460px;
+    }
+
+
+    /* footer */
+
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__left {
+        margin-bottom: 80px;
+    }
+    
+
+}

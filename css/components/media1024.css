@@ -1,0 +1,196 @@
+@media (max-width: 1024px) {
+
+    .container {
+        max-width: 824px;
+    }
+
+    /* header */
+
+    .header__image-media {
+        display: block;
+        background: #F2F2F2;
+    }
+
+    .header__image-media_container {
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+
+    .header__image {
+        display: none;
+    }
+
+    .header__top {
+        display: block;
+        padding: 0;
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+
+    .header__bottom-item:not(:last-child) {
+        margin-right: 27px;
+    }
+
+    .header__bottom-present-broadcast {
+        border-right: 1px solid #E6E8EC;
+        padding-right: 10px;
+    }
+
+    .header__bottom-age {
+        display: none;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-right: 46px;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    /* hero */
+
+    .hero {
+        padding-bottom: 90px;
+    }
+
+    .hero__descr {
+        max-width: 540px;
+    }
+
+    .hero__right {
+        padding-top: 110px;
+    }
+
+    /* podcasts */
+
+    .podcasts__card {
+        margin-right: 20px;
+    }
+
+    .card__hero-left {
+        padding-left: 20px;
+        padding-right: 0;
+        width: 170px;
+    }
+
+    .card__hero-right {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .card__footer {
+        padding-left: 20px;
+    }
+
+
+    /* playlist */
+
+    .playlists__container {
+        display: block;
+    }
+
+    .playlists__tabs {
+        display: grid;
+        grid-template-columns: 280px 280px;
+        border: none;
+    }
+
+    .playlists__right {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 255px 255px 255px;
+        grid-template-rows: 114px 114px 114px 114px;
+        gap: 30px;
+    }
+
+    .playlists__card {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        width: 265px;
+        margin-right: 0;
+    }
+
+    .playlists__warning {
+        display: none;
+    }
+
+    .playlists__18 {
+        display: none;
+    }
+
+    .playlists__warning-media {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #A1A6B4;
+        border-top: 1px solid #A1A6B4;
+        padding-top: 30px;
+        margin-top: 50px;
+    }
+
+    .playlists__18-media {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #A1A6B4;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #A1A6B4;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* buy */
+
+    .buy__left {
+        padding-top: 65px;
+    }
+
+    /* about */
+
+    .about__img-one {
+        display: none;
+    }
+
+    .about__top-right {
+        padding-top: 90px;
+    }
+
+    .about__bottom {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .about__about {
+        width: 390px;
+    }
+
+    .about__form-textarea {
+        max-width: 720px;
+    }
+
+    .about__form-input {
+        width: 335px;
+    }
+
+    
+}
+
+
+
+@media (max-width: 860px) {
+    .playlists__right {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 255px 255px;
+        grid-template-rows: 114px 114px 114px 114px;
+        gap: 30px;
+}
+}

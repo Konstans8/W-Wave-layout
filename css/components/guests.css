@@ -1,0 +1,279 @@
+/* accordion */
+
+.accordion {
+	min-height: 0;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+    margin-right: 30px;
+}
+
+.accordion h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+	letter-spacing: 1px;
+	display: block;
+	margin: 0;
+	padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+	cursor: pointer;
+	background: var(--black);
+	border-top: 1px solid #3face4;
+	border-bottom: 1px solid #2479a5;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.msg {
+	position: relative;
+	overflow: hidden;
+	max-height: 800px;
+    background-color: var(--black);
+}
+
+.msg-container {
+    padding-top: 30px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 550px) {
+	.accordion {
+		box-sizing: border-box;
+		transform: translate(0, 0);
+		max-width: 100%;
+		min-height: 100%;
+		margin: 0;
+		left: 0;
+	}
+}
+
+.accordion ul {
+	list-style: none;
+	perspective: 900;
+	padding: 0;
+	margin: 0;
+}
+
+.accordion ul li {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.accordion ul li:nth-of-type(1) {
+	animation-delay: 0.5s;
+}
+.accordion ul li:nth-of-type(2) {
+	animation-delay: 0.75s;
+}
+.accordion ul li:nth-of-type(3) {
+	animation-delay: 1s;
+}
+.accordion ul li:last-of-type {
+	padding-bottom: 0;
+}
+
+.accordion ul li i {
+	position: absolute;
+	transform: translate(-6px, 0);
+	margin-top: 33px;
+	right: 20px;
+}
+
+.accordion ul li i:before,
+.accordion ul li i:after {
+	content: "";
+	position: absolute;
+	background-color: #eee;
+	width: 3px;
+	height: 15px;
+}
+/* элемент трансформации указателя при переключении */
+.accordion ul li i:before {
+	transform: translate(-4px, 0) rotate(45deg);
+}
+.accordion ul li i:after {
+	transform: translate(4px, 0) rotate(-45deg);
+}
+
+.accordion ul li input[type="checkbox"] {
+	position: absolute;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+}
+
+.accordion ul li input[type="checkbox"]:checked ~ div.msg {
+	margin-top: 0;
+	max-height: 0;
+	opacity: 0;
+	transform: translate(0, 50%);
+}
+
+.accordion ul li input[type="checkbox"]:checked ~ i:before {
+	transform: translate(7px, 0) rotate(45deg);
+}
+.accordion ul li input[type="checkbox"]:checked ~ i:after {
+	transform: translate(-2px, 0) rotate(-45deg);
+}
+
+div.msg,
+ul li i:before,
+ul li i:after {
+	transition: all 0.5s ease-in-out;
+}
+
+.accordeon__item {
+    background-color: var(--primary_light);
+}
+
+.guest__accordion-item {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--white);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    width: 180px;
+    display: flex;
+}
+
+.guest__accordion-item:hover {
+    color: var(--primary_light);
+}
+
+.guest__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* guests */
+
+.guests {
+    background-color:  var(--black);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.guests__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    color: var(--white);
+}
+
+.guests__descr-one {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text_gray);
+}
+
+.guests__descr-two {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--text_gray);
+    max-width: 860px;
+}
+
+.tab__container {
+    display: none;
+    }
+    
+    .tab-content-active {
+    display: flex;
+    }
+
+.tab__social {
+    margin-top: 12px;
+    margin-bottom: 11px;
+}
+
+.tab__svg {
+    margin-right: 30px;
+    fill: var(--text_gray);
+}
+
+.tab__svg:hover {
+    fill: var(--primary);
+}
+
+.tab__svg:focus {
+    fill: var(--primary_light);
+}
+
+.tab__svg:active {
+    fill: var(--primary_shade);
+}
+
+
+.tab__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.tab__descr {
+    width: 350px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--text_gray);
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.tab__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--primary_light);
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid var(--primary_light);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.tab__btn:hover {
+    background: var(--primary_light);
+    color: var(--white);
+}
+
+.tab__btn:focus {
+    background: var(--primary_shade);
+    color: var(--white);
+}
+
+.tab__btn:active {
+    background: var(--primary);
+    color: var(--white);
+}

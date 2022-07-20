@@ -1,0 +1,67 @@
+/* hero */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero__title {
+    font-family: 'Roboto';
+    margin-top: 94px;
+    margin-bottom: 14px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    color: var(--black);
+  }
+
+  .hero__title-italic {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    color: var(--black);
+  }
+
+  .hero__descr {
+    max-width: 625px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--black);
+    margin: 0;
+    margin-bottom: 45px;
+  }
+
+  .hero__descr-link {
+    color: var(--primary);
+  }
+
+  .hero__btn {
+    background: var(--primary);
+    border-radius: 40px;
+    padding: 24px 54px;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+  }
+
+  .hero__btn:hover {
+    background-color: var(--primary_light);
+  }
+
+  .hero__btn:focus {
+    background-color: var(--primary_shade);
+  }
+
+  .hero__btn:active {
+    background-color: var(--primary_light);
+    outline: 2px solid var(--primary_shade);
+  }
+
+  .hero__right {
+      padding-top: 38px;
+      padding-bottom: 40px;
+  }

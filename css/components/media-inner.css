@@ -1,0 +1,11 @@
+@media (max-width: 1180px) {
+
+    .card__hero-left {
+        padding-right: 0px;
+    }
+
+    .card__hero-right {
+        padding-right: 10px;
+    }
+
+}

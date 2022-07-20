@@ -1,0 +1,251 @@
+@media (max-width: 568px) {
+
+    .container {
+        max-width: 444px;
+    }
+
+    /* drop-down-menu */
+
+    .header__bottom-container {
+        display: none;
+    }
+
+    .footer_menu {
+        display: block;
+    }
+
+    .footer_menu a {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    }
+    
+    .drop-down a {
+        max-width: 568px;
+    }
+    
+    .drop-down-menu {
+    display: block;
+    }
+    
+    #menu.overlay{
+    padding-top:130px;
+    }
+
+    #menu {
+    text-align: left;
+    }
+    
+    .menu-title {
+    display: flex;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    cursor: pointer;
+    max-width: 568px;
+    border-bottom: 1px solid #E6E8EC;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6D31EE;
+    }
+
+    .menu-title-img {
+    margin-right: 5px;
+    }
+    
+    .activate {
+    display: none;
+    
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin: 0 0 0 -15px;
+    opacity: 0;
+    }
+    
+    
+    .drop-down a:hover {
+    background: #111;
+    }
+    
+    
+    .drop-down {
+    max-height: 0;
+    overflow: hidden;
+    }
+    
+    .drop-down a {
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    text-transform: Capitalize;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .activate:checked ~ .drop-down {
+    max-height: 280px;
+    }
+    
+    .drop-down, .footer_menu a, .drop-down-menu {
+    -webkit-transform: translateZ(0);  
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    }
+    
+    i.ion-arrow-down-b {
+        position: absolute;
+        top: 8px;
+        color: #fff;
+        right: 14px;
+        font-size: 1.5em;
+    }
+
+    .header__bottom {
+        border: 1px solid #E6E8EC;
+    }
+
+    .hero__title {
+        font-size: 40px;
+    }
+
+
+    .hero__title-italic {
+        font-size: 40px;
+    }
+
+    .hero__descr {
+        max-width: 320px;
+    }
+
+
+    .podcasts {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .podcasts__title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .podcasts__card-container {
+        justify-content: center;
+    }
+
+    .card__hero-left {
+        width: 127px;
+        padding-left: 10px;
+    }
+
+    .card__title {
+        font-size: 15px;
+    }
+
+    .card__autor {
+        font-size: 12px;
+    }
+
+    .card__hero-right {
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+
+    .card__footer-number {
+        font-size: 14px;
+    }
+
+    .card__footer-play {
+        margin-right: 15px;
+    }
+
+
+    .transmission {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .transmission__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    .containerSelect {
+        align-items: center;
+    }
+
+    .transmission__right {
+        justify-content: center;
+    }
+
+
+    .guests {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .guests__descr-two {
+        max-width: 370px;
+    }
+
+    .playlists {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .playlists__left {
+        align-items: center;
+        padding-left: 62px;
+    }
+
+    .playlists__title {
+        padding-right: 56px;
+    }
+
+    .playlists__descr {
+        padding-right: 70px;
+    }
+
+    .playlists__tabs {
+        grid-template-columns: 300px;
+    }
+
+    .playlists__right {
+        grid-template-columns: 255px;
+        justify-content: center;
+    }
+
+    .buy {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .buy__left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .about__form-textarea {
+        max-width: 236px;
+    }
+
+    .about__form-input {
+        width: 267px;
+    }
+
+    .footer__right-box:not(:last-child) {
+        margin-right: 20px;
+    }
+}
