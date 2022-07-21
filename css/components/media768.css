@@ -179,7 +179,7 @@
     /* guests */
 
     .guests__descr-two {
-        width: 540px;
+        max-width: 540px;
     }
 
     .guest__content {

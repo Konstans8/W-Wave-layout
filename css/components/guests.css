@@ -241,7 +241,7 @@ ul li i:after {
 }
 
 .tab__descr {
-    width: 350px;
+    max-width: 300px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

@@ -17,7 +17,7 @@
       }
       
       .drop-down a {
-        width: 300px;
+        width: 320px;
       }
       
       .drop-down-menu {
@@ -37,7 +37,7 @@
         padding-bottom: 17px;
         padding-top: 17px;
         cursor: pointer;
-        width: 300px;
+        width: 320px;
         border-bottom: 1px solid #E6E8EC;
         justify-content: center;
         font-style: normal;
@@ -284,6 +284,8 @@
 
     .guests__title {
         font-size: 24px;
+        display: flex;
+        justify-content: center;
     }
 
     .guests__descr-one {
@@ -316,6 +318,12 @@
 
 
     /* playlists */
+
+    .playlists__title {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+    }
 
     .playlists__right {
         grid-template-columns: 110px 110px;
@@ -398,6 +406,8 @@
 
     .about__title {
         font-size: 24px;
+        display: flex;
+        justify-content: center;
     }
 
     .about__descr-one {
